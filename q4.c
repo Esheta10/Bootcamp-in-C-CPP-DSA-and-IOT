@@ -1,12 +1,20 @@
-//q4.WAP to find the area of the circle. Take radius of circle from user as input and print the result in below given format.
-//Expected output format – “Area of circle is A having the radius R”. Replace A with area & R with radius.
+//4. Write a function to print first N natural numbers (TSRN).
 #include<stdio.h>
+void natural_numbers(int);
 int main()
 {
-    float Area,R;
-    printf("Enter radius of circle ");
-    scanf("%f",&R);
-    Area=3.14 * R * R;
-    printf("Area of circle is %f having the radius %f",Area,R); //area of circle sis 3.14*R*R
+    int num;
+    printf("Enter a number: ");
+    scanf("%d",&num);
+    natural_numbers(num);
     return 0;
 }
+void natural_numbers(int num)
+{
+    for(int i=1;i<=num;i++)
+        printf("%d ",i);
+}
+/*OUTPUT-
+Enter a number: 20
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+*/
