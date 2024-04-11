@@ -26,11 +26,11 @@ int main()
     switch(x<=50)//either true(1) or false(0) will be the result hence written like this.
     {
         case 1: amount=x*0.5; break;
-        case 0: switch(x<=150)
+        case 0: switch(x<=150)//50 se toh zyada hi hai
           {
             case 1: amount= 25+(x-50)*0.75; break;// pehle 50 units ka amount=0.5*50=25/-is always fixed
             //also subtract the initial 50 units from total since its amount is already calculated.
-            case 0: switch(x<=250)
+            case 0: switch(x<=250)//150 se toh zyada hi hai
                 {
                     case 1:amount=25+75+(x-150)*1.20; break;// pehle 50 units ka 25/-and next 100 units ka 75/-
                     //subtract the total of 150 units from the amount since they have already been evaluated.
