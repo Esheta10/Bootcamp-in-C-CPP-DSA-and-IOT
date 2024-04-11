@@ -1,7 +1,6 @@
 //5. Write a recursive function to calculate sum of digits of a given number.
 #include<stdio.h>
 int sum_of_digits(int);
-int sum=0;
 int main()
 {
     int n;
@@ -12,16 +11,10 @@ int main()
 }
 int sum_of_digits(int n)
 {
-    int rem;
     while(n>0)
-    {
-        rem=n%10;
-        sum=sum*10+rem;
-        n=n/10;
-    }
-    return sum;
+        return n%10 +sum_of_digits(n/10);
 }
 /*OUTPUT-
-Enter a number: 678
-sum of digits of a given number is 876
+Enter a number: 123456789
+sum of digits of a given number is 45
 */
