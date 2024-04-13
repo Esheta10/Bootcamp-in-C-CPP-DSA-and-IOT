@@ -15,7 +15,7 @@ int main()
     printf("Copied elements into another array are: ");
     for(i=0;i<5;i++)
     {
-        printf("%d ",a[i]);
+        printf("%d ",b[i]);
     }
 }
 /*OUTPUT-
