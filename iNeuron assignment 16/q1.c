@@ -49,4 +49,5 @@ Enter the elements of 2nd matrix:
 Sum of 2 matrices is: 
 2 4 6
 8 10 12
-14 16 18*/
+14 16 18
+*/
