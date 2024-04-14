@@ -15,7 +15,7 @@ int main()
     {
         for(j=0;j<3;j++)
         {
-            if(i+j==2)  //(i+j == n-1)
+            if(i+j==2)  //(i+j == n-1) 02 11 20
             {
                 sum = sum + a[i][j];
             }
