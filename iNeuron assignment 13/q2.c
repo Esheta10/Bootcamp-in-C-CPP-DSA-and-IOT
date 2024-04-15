@@ -13,10 +13,9 @@ int main()
 int sum_oddN(int n)
 {
     int sum=0;
-    if(n>0)
-    {
-        sum=2*n-1+sum_oddN(n-1);
-    }
+    if(n==1)
+        return 1;
+    sum=2*n-1+sum_oddN(n-1);
     return sum;
 }
 /*OUTPUT-
