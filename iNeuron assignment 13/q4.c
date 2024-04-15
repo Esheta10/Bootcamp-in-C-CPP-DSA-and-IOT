@@ -12,10 +12,9 @@ int main()
 int sum_of_square(int n)
 {
     int sum=0;
-    if(n>0)
-    {
-        sum = n*n + sum_of_square(n-1);
-    }
+    if(n==1)
+        return 1;
+    sum = n*n + sum_of_square(n-1);
     return sum;
 }
 /*OUTPUT-
