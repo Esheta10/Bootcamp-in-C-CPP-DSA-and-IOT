@@ -12,10 +12,9 @@ int main()
 int sum_evenN(int n)
 {
     int sum=0;
-    if(n>0)
-    {
-        sum = 2*n + sum_evenN(n-1);
-    }
+    if(n==1)
+        return 2;
+    sum = 2*n + sum_evenN(n-1);
     return sum;
 }
 /*OUTPUT-
