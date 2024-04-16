@@ -3,7 +3,7 @@
 int main()
 {
     int a[3][3],i,j,sum=0;
-    printf("Enter the array elements:\n");
+    printf("Enter the elements of matrix:\n");
     for(i=0;i<3;i++)
     {
         for(j=0;j<3;j++)
@@ -22,7 +22,7 @@ int main()
     printf("The sum of right diagonals of the matrix is %d",sum);
 }
 /*OUTPUT-
-Enter the array elements:
+Enter the elements of matrix:
 1 2 3
 4 5 6
 7 8 9
