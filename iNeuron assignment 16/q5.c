@@ -3,7 +3,7 @@
 int main()
 {
     int a[3][3],i,j,sum=0;
-    printf("Enter the array elements:\n");
+    printf("Enter the elements of matrix:\n");
     for(i=0;i<3;i++)
     {
         for(j=0;j<3;j++)
@@ -24,7 +24,7 @@ int main()
     printf("The sum of left diagonals of a matrix is %d ",sum);
 }
 /*OUTPUT-
-Enter the array elements:
+Enter the elements of matrix:
 9 8 7
 6 5 4
 3 2 1
