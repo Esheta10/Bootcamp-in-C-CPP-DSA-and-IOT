@@ -67,3 +67,6 @@ int main()
 
     return 0;
 }
+/*OUTPUT-
+24 12 8 6
+*/
