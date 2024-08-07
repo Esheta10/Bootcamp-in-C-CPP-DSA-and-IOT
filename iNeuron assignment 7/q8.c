@@ -1,23 +1,30 @@
 //8.Write a program to find next Prime number of a given number.
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-    int n,i,j,count;
-    printf("Enter a number- ");
+    int n,i;
+    printf("Enter a number: ");
     scanf("%d",&n);
-    for(i=n+1;i<=100;i++)
+    for(int j=n+1;j<=100;j++)
     {
-        count=0;
-        for(j=1;j<=i;j++)
+        int flag=0;
+        for(int i=2;i<=sqrt(j);i++)
         {
-            if(i%j==0)
-             count++;
+            if(j%i == 0 )
+            {
+                flag=1;
+                break;
+            }
         }
-        if(count==2)
+        if(flag == 0)
         {
-         printf(" %d is the next prime number to %d",i,n);
-         break;
+            printf("Next prime number is :%d\n",j);
+            break;
         }
     }
     return 0;
 }
+/*output-
+Enter a number: 34
+Next prime number is :37  */
