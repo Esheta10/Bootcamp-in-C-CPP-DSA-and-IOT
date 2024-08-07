@@ -2,19 +2,25 @@
 #include<stdio.h>
 int main()
 {
-    int min,max,i,j,count;
-    printf("Enter the value of min and max- ");
-    scanf("%d %d",&min,&max);
-    for(i=min;i<=max;i++)
+    int n,a,b;
+    printf("Enter the range for numbers: ");
+    scanf("%d%d",&a,&b);
+    for(int n=a;n<=b;n++)
     {
-        count=0;
-        for(j=1;j<=i;j++)
+        int flag=0;
+        for(int i=2;i<=n/2;i++)
         {
-            if(i%j==0)
-                count++;
+            if(n%i==0)
+            {
+                flag=1;
+                break;
+            }
         }
-        if(count==2)
-            printf("%d ",i);
+         if(flag==0)
+            printf("%d ",n);
     }
     return 0;
 }
+/*output-
+Enter the range for numbers: 2 100
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 */
